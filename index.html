@@ -5,17 +5,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font "Manrope" 200 to 800 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/0a3d24e937.js" crossorigin="anonymous"></script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
-        
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <!-- navigation menu with responsive -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl">Hockey's</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="hidden lg:block">
+                    <button class="btn btn-ghost btn-circle ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+                <a class="btn">Button</a>
+            </div>
+        </div>
     </header>
-    <main>
-
+    <main class="container mx-auto">
+        <!-- professional hockey club -->
+        <section>
+            <div class="text-center border-dashed border-y-2 py-8">
+                <h2 class="text-3xl font-extrabold ">Professional Hockey Club</h2>
+                <p class="w-3/6	mx-auto my-2.5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempore
+                    quae animi quibusdam maxime repellendus nihil, dolorum cum nesciunt qui, officia aliquam magnam nemo
+                    quo sed, facilis dolorem aliquid nam?</p>
+            </div>
+            <div class="flex justify-evenly flex-col lg:flex-row my-12 gap-8">
+                <div class="text-center my-4">
+                    <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
+                    <h3 class="text-xl my-4">Player Facility</h3>
+                    <p>Lorem ipsum dolor sit amet
+                        <br>
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-emerald-500" style="--value:95;" role="progressbar">95%</div>
+                    <h3 class="text-xl my-4">Player Facility</h3>
+                    <p>Lorem ipsum dolor sit amet
+                        <br>
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar">90%</div>
+                    <h3 class="text-xl my-4">Player Facility</h3>
+                    <p>Lorem ipsum dolor sit amet
+                        <br>
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-sky-500" style="--value:80;" role="progressbar">80%</div>
+                    <h3 class="text-xl my-4">Player Facility</h3>
+                    <p>Lorem ipsum dolor sit amet
+                        <br>
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- program section -->
+        <section>
+            <div class="text-center border-dashed border-y-2 py-8">
+                <h2 class="text-3xl font-extrabold ">Professional Hockey Club</h2>
+                <p class="w-3/6	mx-auto my-2.5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempore
+                    quae animi quibusdam maxime repellendus nihil, dolorum cum nesciunt qui, officia aliquam magnam nemo
+                    quo sed, facilis dolorem aliquid nam?</p>
+            </div>
+        </section>
+        <!-- Our New PRoducts -->
+        <section>
+            <div class="text-center border-dashed border-y-2 py-8">
+                <h2 class="text-3xl font-extrabold ">Our New Products</h2>
+                <p class="w-3/6	mx-auto my-2.5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque tempore
+                    quae animi quibusdam maxime repellendus nihil, dolorum cum nesciunt qui, officia aliquam magnam nemo
+                    quo sed, facilis dolorem aliquid nam?</p>
+            </div>
+            <div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 justify-center">
+                    <div class="card lg:card-side bg-base-100 shadow-xl p-5 ">
+                        <figure><img src="Images/5.png" alt="Movie" /></figure>
+                        <div class="card-body">
+                            <div class="flex jutify-around gap-2">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-star"></i>
+                                    <p>5.0</p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <p>20</p>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>200</p>
+                                </div>
+                            </div>
+                            <h2 class="card-title">New movie is released!</h2>
+                            <p>Click the button to watch on Jetflix app.</p>
+                            <div class="flex flex-col lg:flex-row gap-2">
+                                <div>
+                                    <p>Price - $22.00</p>
+                                </div>
+                                <div class="flex items-center gap-2 ">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <p>Delivery Fee: Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="footer grid-rows-2 lg:grid-rows-1 p-10 bg-black	text-white text-base-content	">
+        <aside class="col-span-2 lg:col-span-1  ">
+            <h3 text>Get in touch</h3>
+            <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+            <div class="flex gap-2 items-center">
+                <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:">demo@gmail.com</a>
+            </div>
+            <div class="flex gap-2 items-center">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:">1234567890</a>
+            </div>
+        </aside>
+        <nav>
+            <header class="footer-title">Services</header>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Company</header>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav class="col-span-2 lg:col-span-1">
+            <header class="footer-title">Legal</header>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
     </footer>
 </body>
 
